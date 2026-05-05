@@ -81,7 +81,6 @@ client.once("clientReady", (c) => {
   console.log(`👥 MEMBER_LOG_ID   : ${MEMBER_LOG_ID ?? "ไม่ได้ตั้งค่า"}`);
   console.log(`📦 ADMIN_BACKUP_ID : ${ADMIN_BACKUP_ID ?? "ไม่ได้ตั้งค่า"}`);
   console.log(`🏅 MEMBER_ROLE_ID  : ${MEMBER_ROLE_ID}`);
-  console.log(`🔢 ลำดับสมาชิกปัจจุบัน: ${loadCounter().member}`);
 });
 
 // ========== Helpers ==========
