@@ -184,7 +184,7 @@ client.on("interactionCreate", async (interaction) => {
 
     const embed = new EmbedBuilder()
       .setColor(0x0066ff)
-      .setTitle("XiCNIE : กรอกข้อมูลส่วนตัว")
+      .setTitle("✗iCDIE : กรอกข้อมูลส่วนตัว")
       .addFields(
         { name: "📋 ข้อมูลที่ต้องกรอก", value: "ชื่อ Roblox • ชื่อเล่น/อายุ • ชื่อ IC • เวลาว่าง • อุปกรณ์", inline: false }
       )
