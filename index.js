@@ -22,7 +22,7 @@ const TOKEN             = process.env.DISCORD_TOKEN;
 const LEAVE_LOG_ID      = process.env.LEAVE_LOG_ID     || "1500744742181277807";
 const MEMBER_LOG_ID     = process.env.MEMBER_LOG_ID;
 const ADMIN_BACKUP_ID   = process.env.ADMIN_BACKUP_ID;
-const MEMBER_ROLE_ID    = "1500588395330666658";
+const MEMBER_ROLE_ID    = Process.env.MEMBER_ROLE_ID;
 const PORT              = process.env.PORT || 3000;
 
 if (!TOKEN) {
@@ -100,7 +100,7 @@ function buildLeaveAdminButtons(requesterId) {
 function buildMemberAdminButtons(userId) {
   return new ActionRowBuilder().addComponents(
     new ButtonBuilder()
-      .setCustomId(`member_ack_${userId}`)
+      .setCustomId(`member_ack_${1500588395330666658}`)
       .setLabel("รับรู้แล้ว").setStyle(ButtonStyle.Success).setEmoji("✅"),
     new ButtonBuilder()
       .setCustomId(`member_revoke_${userId}`)
