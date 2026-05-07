@@ -425,7 +425,7 @@ client.on("interactionCreate", async (interaction) => {
           .setColor(0x0066ff)
           .setTitle("✅ บันทึกข้อมูลและมอบยศสมัครสมาชิกให้เรียบร้อยแล้ว!")
           .setDescription(roleAdded
-            ? "ยินดีต้อนรับสู่ทีม! ยศสมาชิกถูกมอบให้คุณแล้วครับ 🎉"
+            ? "ยินดีต้อนรับสู่ทีม! กรอกข้อมูลสำเร็จ และ ส่งให้แอดมินเรียบร้อยครับ 🎉"
             : "บันทึกข้อมูลแล้ว แต่ยังมอบยศไม่ได้ — กรุณาแจ้งแอดมินครับ"
           )
           .addFields(
@@ -457,7 +457,7 @@ client.on("interactionCreate", async (interaction) => {
     await sendDM(requesterId, new EmbedBuilder()
       .setColor(0x0066ff)
       .setTitle("✅ ใบลาของคุณได้รับการอนุมัติแล้ว")
-      .setDescription("ทีมงานได้อนุมัติคำขอลาของคุณเรียบร้อยแล้ว ขอให้พักผ่อนให้สบายนะครับ 😊")
+      .setDescription("ทีมงานได้อนุมัติคำขอลาของคุณเรียบร้อยแล้ว 😊")
       .setFooter({ text: `อนุมัติโดย: ${interaction.user.tag}` })
       .setTimestamp()
     );
