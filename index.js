@@ -364,7 +364,7 @@ client.on("interactionCreate", async (interaction) => {
         { name: "🪪 ชื่อ IC",        value: icName,      inline: false },
         { name: "⏰ เวลาว่าง",       value: freeTime,    inline: true },
         { name: "🖥️ อุปกรณ์",       value: device,      inline: true },
-        { name: "🏅 ยศสำรอง",    value: roleStatus,  inline: false }
+        { name: "🏅 ยศหลัก",    value: roleStatus,  inline: false }
       )
       .setFooter({ text: `เซิร์ฟเวอร์: ${guildName} • สมัครเมื่อ` })
       .setTimestamp();
