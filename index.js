@@ -423,15 +423,10 @@ client.on("interactionCreate", async (interaction) => {
       embeds: [
         new EmbedBuilder()
           .setColor(0x0066ff)
-          .setTitle("✅ บันทึกข้อมูลและมอบยศสมัครสมาชิกให้เรียบร้อยแล้ว!")
+          .setTitle("✅ บันทึกข้อมูลเรียบร้อยแล้ว!")
           .setDescription(roleAdded
             ? "ยินดีต้อนรับสู่ทีม! กรอกข้อมูลสำเร็จ และ ส่งให้แอดมินเรียบร้อยครับ 🎉"
             : "บันทึกข้อมูลแล้ว แต่ยังมอบยศไม่ได้ — กรุณาแจ้งแอดมินครับ"
-          )
-          .addFields(
-            { name: "🎮 ชื่อ Roblox",    value: robloxName,  inline: true },
-            { name: "📛 ชื่อเล่น/อายุ", value: nicknameAge, inline: true },
-            { name: "🔢 ลำดับสมาชิก",   value: `#${memberNo}`, inline: true }
           )
           .setTimestamp(),
       ],
