@@ -364,7 +364,7 @@ client.on("interactionCreate", async (interaction) => {
         { name: "🪪 ชื่อ IC",        value: icName,      inline: false },
         { name: "⏰ เวลาว่าง",       value: freeTime,    inline: true },
         { name: "🖥️ อุปกรณ์",       value: device,      inline: true },
-        { name: "🏅 ยศที่ได้รับ",    value: roleStatus,  inline: false }
+        { name: "🏅 ยศสำรอง",    value: roleStatus,  inline: false }
       )
       .setFooter({ text: `เซิร์ฟเวอร์: ${guildName} • สมัครเมื่อ` })
       .setTimestamp();
@@ -425,7 +425,7 @@ client.on("interactionCreate", async (interaction) => {
           .setColor(0x0066ff)
           .setTitle("✅ บันทึกข้อมูลเรียบร้อยแล้ว!")
           .setDescription(roleAdded
-            ? "ยินดีต้อนรับสู่ทีม! กรอกข้อมูลสำเร็จ และ ส่งให้แอดมินเรียบร้อยครับ 🎉"
+            ? "ยินดีต้อนรับสู่ ✗iCNIE กรอกข้อมูลสำเร็จ และ ส่งให้แอดมินเรียบร้อยครับ 🎉"
             : "บันทึกข้อมูลแล้ว แต่ยังมอบยศไม่ได้ — กรุณาแจ้งแอดมินครับ"
           )
           .setTimestamp(),
