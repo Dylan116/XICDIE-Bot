@@ -341,7 +341,7 @@ client.on("interactionCreate", async (interaction) => {
     try {
       const member = interaction.member ?? await interaction.guild.members.fetch(userId);
       await member.roles.add(MEMBER_ROLE_ID);
-      await member.roles remove('1501892795747794964');
+      await member.roles.remove('1501892795747794964');
       roleAdded = true;
       console.log(`🏅 แจกยศให้ ${interaction.user.tag} สำเร็จ`);
     } catch (err) {
